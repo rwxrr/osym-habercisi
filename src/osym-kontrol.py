@@ -14,7 +14,8 @@ aciklananlar = sonuclar.findAll('a')
 for aciklananadres in aciklananlar[0:1]:
 	#Adreslerin son 4 haneleri sinavlarin IDlerini iceriyor, son aciklanan sinavin IDsine bakip kodu ona gore yazdim; son sinav ID: 1959
 	sonsinavid = aciklananadres['href'][19:23]
-	if int(sonsinavid) > 1659:
+	#Beklenenin aksine aciklanan son sonuc OSYS sonucu olmazsa diye, isimizi garentiye alalım
+	if int(sonsinavid) > 1659 and aciklananadres.text == u'2014-ÖSYS Sonuçları':
 		print 'Açıklanan sınav ID: ' + str(sonsinavid)
 		kimden = 'kaanklky@gmail.com'
 		#Sonuclar aciklandiginda bana da e-posta at diyen arkadaşlariniz e-posta adreslerini ',' ile ayirarak yazabilirsiniz. Asagida 3 kisiye yolladik mesela
