@@ -11,7 +11,7 @@ Version
 Kullanımı
 -----------
 
-Scripti kullanmanın en iyi yolu [crontab][4] ile kullanmak. Zamanlamasını yapıp betiği crontab'e koyduktan sonra keyfinize bakın, sonuçlar açıklandığında o sizi dürter.
+Scripti kullanmanın en iyi yolu [crontab][4] ile kullanmak. Zamanlamasını yapıp scripti crontab'e koyduktan sonra keyfinize bakın, sonuçlar açıklandığında o sizi dürter.
 
 
 License
